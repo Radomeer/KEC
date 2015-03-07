@@ -6,7 +6,7 @@
 						<li class = "dropdown">
 							<a href="#" class = "dropdown-toggle" data-toggle = "dropdown">O <span class ="caret"></span></a>
 							<ul class="dropdown-menu" role="menu"  aria-labelledby="dropdownMenu">
-								<li><a href="" tabindex="-1">Vesni Klacar</a></li>
+								<li><a href="o-vesni.php" tabindex="-1">Vesni Klacar</a></li>
 								<li><a href="" tabindex="-1">Drugi o Vesni Klacar</a></li>
 								<li><a href="" tabindex="-1">Beleške</a></li>
 							</ul>
@@ -15,10 +15,12 @@
 						<li><a href="blog.php">Blog</a></li>
 						<li><a href="gallery.php">Galerija</a></li>
 						<li><a href="">Video</a></li>
-						<li><a href="">Kontakt</a></li>
+						<li><a href="registration-form.php">Kontakt</a></li>
 						<li><a href=""></a></li>
-						<li class = "eng"><a href="" >English</a></li>
-						<li><a href="" class="sr">Srpski</a></li>
+						<li class = "eng" title = "English"><a href="" >English</a></li>
+						<li><a href="" class="sr" title ="Srpski">Srpski</a></li>
+						<li><a href="" title ="French">Francuski</a></li>
+						<li><a href="" >Nemarcki</a></li>
 					</ul>
 				</section>
 			</div> <!-- end col 12 -->

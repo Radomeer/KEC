@@ -28,6 +28,7 @@
 
 html {
 	  font-size: 100%;
+	  overflow-y: scroll;
 	
 }
 
@@ -42,6 +43,7 @@ body {
   	background-color: #000000;
   	font-weight: normal;
 	font-style:normal;
+	
 }
 
 .current{
@@ -50,6 +52,8 @@ body {
 
 
 	/************ Article Styles ************/
+
+
 
 header {
 	 border-top: 5px solid #444;
@@ -71,7 +75,9 @@ nav {
 	margin-bottom: 2em;
 }
 
-
+.navbar {
+	margin-bottom: 0;
+}
 
 a:hover{
 	text-decoration: none;
@@ -99,10 +105,10 @@ a:hover{
 .nav>li {
 	line-height: 1.4em;
  	margin-left: 0px;
- 	margin-right: 2.4em;
+ 	margin-right: 1.7em;
   	display: block;
   	text-transform: uppercase;
-  	font-size: .95em;
+  	font-size: 1em;
 }
 
 li.eng:hover, li.eng:focus {
@@ -127,6 +133,16 @@ li.eng a{
 .nav li:nth-child(10){
 	text-indent: -9000em;
 	background: url(../images/icons/flags/sr_rs.png) no-repeat left center;
+}
+
+.nav li:nth-child(11){
+	text-indent: -9000em;
+	background: url(../images/icons/flags/fr.png) no-repeat left center;
+}
+
+.nav li:nth-child(12){
+	text-indent: -9000em;
+	background: url(../images/icons/flags/de.png) no-repeat left center;
 }
 
 
@@ -189,20 +205,41 @@ li.eng a{
 	color:#a416cc;
 }
 
-	/* Gallery Styles*/
+
+/*_____________________________________________________ Gallery Styles*/
+
+
+.gallery {
+	/* overflow: hidden;
+		clear: both; */	
+}
+
+
+.gallery ul {
+	overflow: hidden;
+}
+.tthumbnail {
+	float: left;
+	list-style: none;
+}
+
+
 
 .tthumbnail img {
 	width: 120px;
-	background-color: #fff;
+	height: 90px;
+	background-color: #e5e5e5;
   	border: 1px solid #a9a9a9;
   	display: block;
-  	margin: 4px 0 4px 4px;
+  	margin: 5px;
   	padding: 4px;
   	position: relative;
+
 }
 
 .tthumbnail img:hover {
 	background: #a9a9a9;
+		
 }
 
 
@@ -211,16 +248,13 @@ li.eng a{
 			/******* Sidebar Styles ********/
 aside {
 		color: #555;
-
 }
 aside h2 {
-	
 	font-size: 0.9em;
   	color:#aaa;
   	text-transform: uppercase;
   	letter-spacing: 1px;
   	word-spacing: 2px;
-  	
 }
 
 aside div {
@@ -251,13 +285,74 @@ aside li a{
 	color: #555; 
 }
 
-.media {
+.social {
 	border-top: 5px solid #444;
 	border-bottom: 5px solid #444;
 	padding-top: 30px;
 	background: url(../images/toolbox-small.png) no-repeat left center;
  
 }
+
+.media.post h2{
+	text-align: center;
+	margin: 1em 0;
+	color: #aaa;
+	letter-spacing: .1em;
+
+}
+
+.media.post img {
+	  margin-top: 5em;
+}
+
+
+/* Forms
+-------------------------------------------------------------- */
+form label, form input, form textarea {
+	font-family: 'Bitter', Georgia, 'Times New Roman', Times, serif;
+	font-weight: normal;
+}
+form label {
+	line-height: 1.5em;	
+	color: #888;
+
+}
+
+legend {
+ padding-bottom: 10px;
+}
+
+
+
+input[type="text"], input[type="password"], input[type="email"], .input-text, textarea, select {
+	border: 1px solid #ddd;
+	padding: 5px;
+	outline: none;
+	font-size: 1em;
+	color: #aaa;
+	margin: 0;
+	display: block;
+	background: #ddd;
+	margin-bottom: 1em;
+}
+select { padding: 0; }
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, textarea:focus, .input-text:focus {
+	border: 1px solid #aaa;
+	color: #444;
+	-moz-box-shadow: 0 0 3px rgba(0,0,0,.2);
+	-webkit-box-shadow: 0 0 3px rgba(0,0,0,.2);
+	box-shadow:  0 0 3px rgba(0,0,0,.2);
+}
+textarea {
+	display: block;
+	width: 94%;
+	min-height: 60px;
+}
+input[type="radio"] { vertical-align: text-middle; }
+input[type="checkbox"] { display: inline; }
+input[type="submit"]:hover { cursor: pointer }
+.error { color: #ff4367; }
+
 
 footer {
 	font-size: 0.8em;

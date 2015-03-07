@@ -1,4 +1,4 @@
-		<div class="media">
+		<div class="social">
 						
 
 		</div>
@@ -16,7 +16,7 @@
 		</div> <!-- end row -->
 
 	</div> <!-- end Container-->
-	
+
 
 
 

@@ -6,7 +6,7 @@
 	<title>Kulturno-Edukativni Centar - TARA</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/mycustom.css">
-
+	
 	<link rel="stylesheet" type="text/css" href="js/respond.js">
 </head>
 

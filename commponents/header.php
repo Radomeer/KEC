@@ -18,7 +18,7 @@
 		<header class="row">
 			
 			<div class="col col-md-3">
-				<img src="images/logo.png">
+				<a href="index.php"><img src="images/logo.png"></a>
 			</div>
 			<div class="col col-md-9">
 				<h1>

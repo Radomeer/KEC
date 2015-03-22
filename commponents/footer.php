@@ -5,6 +5,7 @@
 
 		<div class="row">
 			<footer class = "footer-content">
+
 				<p class="copyright">
 					"Copyright @ 2015 &nbsp;<a href="index.html">Kulturno  Edukativni Centar - TARA</a>
 				</p>
@@ -12,6 +13,7 @@
 				<p class="credit">		
 					Powered by Radomir Ranković
 				</p>
+
 			</footer>			
 		</div> <!-- end row -->
 

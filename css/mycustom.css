@@ -254,6 +254,21 @@ ul>li:hover a {
 		
 }
 
+/*____________________________________________________Video Styles*/
+
+	.video {
+		 border: 3px solid #a9a9a9;
+		margin-bottom: 2em;
+	}
+
+	.videoWrapper h2{
+		font-size: 2em;
+		margin-bottom: 1em;
+		text-align: center;
+	}
+
+
+
 
 
 
@@ -318,8 +333,8 @@ aside li a{
 }
 
 
-/* Forms
--------------------------------------------------------------- */
+/* _____________________________________________________ Forms */
+
 form label, form input, form textarea {
 	font-family: 'Bitter', Georgia, 'Times New Roman', Times, serif;
 	font-weight: normal;
@@ -365,6 +380,97 @@ input[type="checkbox"] { display: inline; }
 input[type="submit"]:hover { cursor: pointer }
 .error { color: #ff4367; }
 
+/*__________________________________________Contact Form  */
+
+
+.contact-form h1 {
+	text-align: center;
+	font-size: 2em;
+	margin-bottom: 1em;
+	color: #ddd;
+	
+}
+
+#contactForm {
+	padding: 20px;
+	font-size: 1em;
+	color: #555;
+
+}
+
+#contactForm input[type=text], #contactForm input[type=email], #contactForm input[type=submit] {
+
+	width: 70%;
+	height: 30px;
+	display: block;
+	padding: 5px 10px;
+	color:#222;
+	margin-bottom:10px;
+	vertical-align:baseline;
+}
+
+#contactForm input[type=text]:hover, 
+#contactForm input[type=text]:focus , 
+ #contactForm input[type=email]:hover,  
+  #contactForm input[type=email]:focus, 
+  #contactForm input[type=submit]:hover, 
+ #contactForm textarea:focus,
+  #contactForm textarea:hover {
+	
+	background: #a416cc;
+	-webkit-transition:all .3s ease-in-out;
+	-moz-transition:all .3s ease-in-out;
+	transition:all .3s ease-in-out;
+	color: white
+
+
+}
+
+#contactForm textarea {
+	
+	height: 200px;
+}
+
+ #contactForm input[type=submit] {
+ 	width: 100px;
+ 	height: 35px;
+ 	margin-bottom: 0;
+ 	background: #ddd;
+ 	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
+	border-radius:2px;
+	text-transform: uppercase;
+	cursor: pointer;
+	-webkit-transition:all .3s ease-in-out;
+	-moz-transition:all .3s ease-in-out;
+	transition:all .3s ease-in-out;
+ }
+
+  #contactForm input[type=submit]:hover {
+	background: #9416CC;
+	color: white;
+}
+
+.errorlist {
+	list-style: none;
+}
+label.error, .errorlist li {
+	margin-bottom: 10px;
+	color:#bb0000;
+}	
+.errorlist li:last-child {
+	margin-bottom: 20px;
+}
+
+#contactForm p{
+	margin-bottom: 1.6em;
+   line-height: 2.2em;
+}
+
+
+
+
+		/******* Sidebar Styles ********/
 
 footer {
 	font-size: 0.8em;

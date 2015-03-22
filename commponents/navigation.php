@@ -14,8 +14,8 @@
 						<li><a href="">Kulturno Edukativni Centar</a></li>
 						<li><a href="blog.php">Blog</a></li>
 						<li><a href="gallery.php">Galerija</a></li>
-						<li><a href="">Video</a></li>
-						<li><a href="registration-form.php">Kontakt</a></li>
+						<li><a href="video.php">Video</a></li>
+						<li><a href="contact_form.php">Kontakt</a></li>
 						<li><a href=""></a></li>
 						<li class = "eng" title = "English"><a href="" >English</a></li>
 						<li><a href="" class="sr" title ="Srpski">Srpski</a></li>

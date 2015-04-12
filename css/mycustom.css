@@ -29,7 +29,7 @@
 html {
 	  font-size: 100%;
 	  overflow-y: scroll;
-	
+	 
 }
 
 
@@ -51,10 +51,6 @@ body {
 }
 
 
-	/************ Article Styles ************/
-
-
-
 header {
 	 border-top: 5px solid #444;
 	 border-bottom: 1px solid #e5e5e5;
@@ -68,8 +64,12 @@ header {
 header h1 {
 	font-size: 2em;
 	text-transform: uppercase;
-	color: #a416cc;
+	color:#ddd;
+	/*color: #a416cc;*/
+}
 
+header img {
+	
 }
 
 nav {
@@ -82,6 +82,14 @@ nav {
 
 a:hover{
 	text-decoration: none;
+}
+
+img {
+	opacity: .9;
+	}
+
+img:hover {
+	opacity: 1;
 }
 
 	/* Main Navigation Style */
@@ -100,7 +108,7 @@ a:hover{
 }
 
 .nav>li>a:hover {
-	/* background: #aaa; */
+	background: transparent;
 }
 
 .nav>li {
@@ -108,8 +116,32 @@ a:hover{
  	margin-left: 0px;
  	margin-right: 1.7em;
   	display: block;
-  	text-transform: uppercase;
+  	text-transform: lowercase;
   	font-size: 1em;
+}
+
+
+.navbar ul li ul {
+	background: black;
+}
+
+.navbar ul li ul li{
+	text-transform: lowercase;
+}
+
+ul>li:hover a {
+	color: #a416cc;
+}
+
+.navbar ul>li:hover{
+	background: transparent;
+		
+}
+
+.navbar ul>li a:hover{
+	background: transparent;
+	color: #ddd;
+		
 }
 
 li.eng:hover, li.eng:focus {
@@ -118,17 +150,17 @@ li.eng:hover, li.eng:focus {
 
 
 
+.navbar ul>li a.active {
+	background: transparent;
+	color: #ddd;
+}
+
+
+
 li.eng a{
 	text-indent: -9000em;
 	background: url(../images/icons/flags/en_us.png) no-repeat left center;
 }
-
-
-/* .nav li:nth-child(9){
-	text-indent: -9000em;
-	background: url(../images/icons/flags/en_us.png) no-repeat left center;
-
-} */
 
 
 .nav li:nth-child(10){
@@ -141,6 +173,7 @@ li.eng a{
 	background: url(../images/icons/flags/fr.png) no-repeat left center;
 }
 
+
 .nav li:nth-child(12){
 	text-indent: -9000em;
 	background: url(../images/icons/flags/de.png) no-repeat left center;
@@ -148,36 +181,25 @@ li.eng a{
 
 
 
+/*_________________________________________________________________ Carousel Styles */
 
 
-
-.navbar ul li ul {
-	background: #aaa;
+#myCarousel img {
+	background: black;
 }
-
-ul>li:hover a {
-	color: black;
-}
-
-.navbar ul>li:hover{
-	background: #aaa;
-		
-}
-
-
-
-.mainNav li {
-	list-style: none;
-}
-
 
 
 .carousel-wrapper {
 	padding-bottom: 2em;
 	margin-bottom: 2em;
-	border-bottom: 1px solid #e5e5e5;
-
+	height: 530px;
+	opacity: .9;
 }
+
+.carousel-wrapper:hover {
+		opacity: 1;
+}
+/*_________________________________________________________________ Post Styles */
 
 .post {
 	border-bottom: 1px solid #e5e5e5;
@@ -187,7 +209,7 @@ ul>li:hover a {
 
 .post img {
 	float: left;
-  	width: 23.4375%;
+  	width: 100%;
   	margin: 3px 3.9% 20px 0;
   	border: 1px solid #e5e5e5;
 }
@@ -215,17 +237,193 @@ ul>li:hover a {
 	color:#a416cc;
 }
 
+.media.post {
+	border-bottom: none;
+}
+.media.post h2{
+	text-align: center;
+	margin: 1em 0;
+	color: #aaa;
+	letter-spacing: .1em;
+
+}
+.media.post img {
+	  margin-top: 5em;
+	
+}
+
+.media-body img {
+	  margin-bottom: 1em; 
+	  margin-right: 1em ;
+}
+
+@media (max-width:500px) {
+
+	header {
+		padding-top: 10px;
+	}
+
+	header h1 {
+		font-size: 1.5em;
+		text-align: center;
+		padding-top: .5em; 
+	}
+
+	header img {
+	 display: block;
+	 margin: 0 auto;
+
+	}
+
+
+	.post{
+		margin-top: 1em;
+		font-size:.9em;
+		margin-bottom: 1em;
+
+		
+	}
+
+	.post p{
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.post h2 {
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	.post img {
+		margin: 0 auto;
+		width:60%;
+		display: block;
+		float: none;
+	}
+	
+	.post .pubdate {
+	font-size: 0.65em;
+  	color: #aaa;
+ 	line-height: 1.2;
+  	word-spacing: 2px;
+  	text-align: center;
+  	margin-bottom: .2em;
+
+	}
+}
+
+/*_____________________________________________________ Scrollspy Styles */
+
+
+.scrollspy .nav {
+	
+	margin-top:20px;
+}
+
+.scrollspy .nav h5 {
+	
+	color: #aaa;
+	text-align: center;
+}
+
+.scrollspy .nav a{
+	padding-left: 30px;
+	text-indent: -10px;
+	text-transform: capitalize;
+}
+
+.scrollspy .nav a:hover{
+	color: white;
+	background: transparent;
+}
+
+.scrollspy .nav li{
+	margin: 0;
+	padding: 0;
+}
+
+
+.scrollspy .nav li:hover{
+	background: transparent;
+}
+
+.scrollspy .nav li.active{
+	background: transparent;
+}
+
+.scrollspy .nav li.active span{
+	color: #ddd;
+}
+
+.scrollspy .nav li.active a{
+	color: #ddd;
+}
+
+@media (max-width:979px) {
+
+	.scrollspy .nav {
+		width: 15%;
+		max-width: 120px;
+	}
+
+}
+
+@media (min-width:980px) and (max-width: 1199px) {
+
+	.scrollspy .nav {
+		width: 13%;
+		
+	}
+
+}
+
+@media (min-width:1200px){
+
+	.scrollspy .nav {
+		width: 13%;
+		max-width: 180px;
+		
+	}
+
+}
+
+
 
 /*_____________________________________________________ Gallery Styles*/
+
+.albums{
+	margin-top: 4em;
+
+}
+
+.albums img {
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+    -webkit-box-shadow: 0px 2px 6px 2px rgba(255,255,255,255.75);
+    -moz-box-shadow: 0px 2px 6px 2px rgba(255,255,255,255.75);
+    box-shadow: 0px 2px 6px 2px rgba(255,255,255,255.75);
+    margin-bottom:20px;
+}
+
+.albums img:hover {
+  filter: none; /* IE6-9 */
+  -webkit-filter: grayscale(0); /* Google Chrome, Safari 6+ & Opera 15+ */
+ 
+}
 
 
 .gallery {
 	/* overflow: hidden;
 		clear: both; */	
-		margin: 3em 0;
-		
+		margin: 3em 0;		
 }
 
+
+.gallery h2 {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 1.7em;
+}
 
 .gallery ul {
 	overflow: hidden;
@@ -315,21 +513,32 @@ aside li a{
 .social {
 	border-top: 5px solid #444;
 	border-bottom: 5px solid #444;
-	padding-top: 30px;
-	background: url(../images/toolbox-small.png) no-repeat left center;
- 
+	padding: 15px;
+
+	
 }
 
-.media.post h2{
-	text-align: center;
-	margin: 1em 0;
-	color: #aaa;
-	letter-spacing: .1em;
-
+.social-icons h5{
+	 	text-align: center;
 }
 
-.media.post img {
-	  margin-top: 5em;
+.social-icons ul{
+  overflow: hidden;
+  padding: 0;
+  margin: 0 auto;
+  width: 50%;
+  margin-bottom: 1em;
+}
+
+.social-icons li{
+	float: left;
+	list-style: none;
+	margin-left: 1.6em;
+}
+
+
+.facebook-icon {
+
 }
 
 
@@ -372,7 +581,7 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 }
 textarea {
 	display: block;
-	width: 94%;
+	width: 100%;
 	min-height: 60px;
 }
 input[type="radio"] { vertical-align: text-middle; }
@@ -388,11 +597,12 @@ input[type="submit"]:hover { cursor: pointer }
 	font-size: 2em;
 	margin-bottom: 1em;
 	color: #ddd;
+	width: 70%;
 	
 }
 
 #contactForm {
-	padding: 20px;
+	
 	font-size: 1em;
 	color: #555;
 
@@ -400,7 +610,7 @@ input[type="submit"]:hover { cursor: pointer }
 
 #contactForm input[type=text], #contactForm input[type=email], #contactForm input[type=submit] {
 
-	width: 70%;
+	width: 100%;
 	height: 30px;
 	display: block;
 	padding: 5px 10px;
@@ -411,11 +621,11 @@ input[type="submit"]:hover { cursor: pointer }
 
 #contactForm input[type=text]:hover, 
 #contactForm input[type=text]:focus , 
- #contactForm input[type=email]:hover,  
-  #contactForm input[type=email]:focus, 
-  #contactForm input[type=submit]:hover, 
- #contactForm textarea:focus,
-  #contactForm textarea:hover {
+#contactForm input[type=email]:hover,  
+#contactForm input[type=email]:focus, 
+#contactForm input[type=submit]:hover, 
+#contactForm textarea:focus,
+#contactForm textarea:hover {
 	
 	background: #a416cc;
 	-webkit-transition:all .3s ease-in-out;
@@ -429,11 +639,12 @@ input[type="submit"]:hover { cursor: pointer }
 #contactForm textarea {
 	
 	height: 200px;
+	color: #555;
 }
 
  #contactForm input[type=submit] {
- 	width: 100px;
- 	height: 35px;
+ 	width: 80px;
+ 	font-size: .9em;
  	margin-bottom: 0;
  	background: #ddd;
  	-webkit-border-radius:2px;
@@ -488,3 +699,24 @@ footer a:hover {
 	 color: #a416cc;
 	
 }
+
+
+
+ #map {
+ 	
+    width: 350px;
+    height: 350px;
+    margin: 6em auto 0;
+    -moz-box-shadow: 0px 5px 20px #ccc;
+	-webkit-box-shadow: 0px 5px 20px #ccc;
+	box-shadow: 0px 5px 20px #ccc;
+
+  }
+
+/*--------------------------------------------------Saradnici Styles */
+
+
+.info-saradnika h2{
+	  color: #475c98;
+}
+

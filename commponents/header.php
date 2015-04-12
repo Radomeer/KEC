@@ -1,26 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name = "viewport" content="width=device-width, initial-scale=1.0">
-	<title>Kulturno-Edukativni Centar - TARA</title>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/mycustom.css">
-	
-	<link rel="stylesheet" type="text/css" href="js/respond.js">
-</head>
-
-
-<body>
-
-	
-	<div class="container">
 		<header class="row">
 			
-			<div class="col col-md-3">
-				<a href="index.php"><img src="images/logo.png"></a>
+			<div class="col col-md-3 col-sm-3 col-xs-12">
+				<a href="index.php"><img src="images/logo/logo.png"></a>
 			</div>
-			<div class="col col-md-9">
+			<div class="col col-md-9 col-sm-9 col-xs-12">
 				<h1>
 					<p>Kulturno-Edukativni Centar - TARA</p>
 				</h1>

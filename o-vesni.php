@@ -1,13 +1,31 @@
- <?php include('commponents/header.php'); ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name = "viewport" content="width=device-width, initial-scale=1.0">
+	<title>Kulturno-Edukativni Centar - TARA</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/mycustom.css">
+	
+	<script type="text/javascript" src="js/respond.js"></script>
+</head>
 
- <?php include('commponents/navigation.php'); ?>
+
+<body>
+
+	
+	<div class="container">
+
+		<?php include('commponents/header.php'); ?>
+
+ 		<?php include('commponents/navigation.php'); ?>
 	
 	
 		<div class = "row">	
 			<article class "mainContent">
 				<div class="col col-md-8">
 					<div class = "media post">
-						<img src="images/vk-blog.jpg" alt="Slika o Vesni Klačar">
+						<img src="images/blog/vk-blog-150x150-.jpg" alt="Slika o Vesni Klačar">
 						<h2>Vesna Klačar</h2>
 						<div class="media-body">
 							<p>&emsp; Vesna Klačar rodjena je trećeg oktobra 1982.godine u Bihaću.( Bosna i Hercegovina) Sa nepunih devet godina seli se sa svojom porodicom iz Hrvatske u Crnu Goru, u rodno mesto njenog oca. Posle završene Gimnazije „Tanasije Pejatović“ u Pljevljima, upisuje 2001.godine Filozofski fakultet u Beogradu, smer arheologija. 2006. godine kada je bila na završnoj godini studija,  prekida studiranje.  2007.godine dobija ćerku Nastasju, a 2008.godine i drugu ćerku Taru. 1. aprila 2009. godine diplomira na Filozofskom fakultetu, sa temom „Ikonografija sepulkralnih spomenika Municipijuma S…“kod prof. dr. Aleksandra Jovanovića. 2010.godine završava dva kursa na Centralnom Institutu za Konzervaciju u Beogradu, početni kurs konzervacije keramike kao  i kurs kopije i replike. Iste te godine u oktobru  njena mladja ćerka Tara dobija dijagnozu autizma i život nje i njene porodice kreće u potpuno drugom pravcu…Zavod za govornu patologiju, Institut za mentalno zdravlje, privatni vrtić, drzavni vrtić, privatni časovi kod logopeda… 2012.godine u julu seli se sa ćerkama sa Novog Beograda za Obrenovac. 
@@ -26,4 +44,16 @@
 
 		</div> <!-- end row -->
 
-<?php include('commponents/footer.php'); ?>
+		<?php include('commponents/footer.php'); ?>
+		
+	</div> <!-- end Container-->
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/myscript.js"></script>
+
+	
+		
+</body>
+</html>

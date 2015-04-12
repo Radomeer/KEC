@@ -1,7 +1,24 @@
-<?php include("commponents/header.php");?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name = "viewport" content="width=device-width, initial-scale=1.0">
+	<title>Kulturno-Edukativni Centar - TARA</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/mycustom.css">
+	
+	<script type="text/javascript" src="js/respond.js"></script>
+</head>
 
 
-		<?php include("commponents/navigation.php") ?> 
+<body>
+
+	
+	<div class="container">
+
+		<?php include('commponents/header.php'); ?>
+
+		<?php include("commponents/navigation.php"); ?> 
 
 	
 		<div class = "row">	
@@ -9,20 +26,21 @@
 				<div class="col col-md-8">
 			
 					<div class = "videoWrapper">
-						<h2>VIDEO GALERIJA KULTURNO EDUKATIVNOG CENTRA</h2>			 
+							 
 						<div class = "video">
-							<div style="display:none;" class="html5gallery" data-skin="vertical" data-width="480" data-height="272" data-responsive="true">		
-								<a href="https://www.youtube.com/watch?v=_TvAykdKRu0&feature=youtu.be"><img src="http://img.youtube.com/vi/YE7VzlLtp-4/2.jpg" alt="Humanitarni koncert MMI akademije, Cane i Beogradski sindikat u Ustanovi kulture Palilula"></a>
-								<a href="https://www.youtube.com/watch?v=03jfZWP9SdI"><img src="http://img.youtube.com/vi/YE7VzlLtp-4/2.jpg" alt="U naselju"></a>
-								<a href="https://www.youtube.com/watch?v=DOLQs0AE4Y0"><img src="http://img.youtube.com/vi/YE7VzlLtp-4/2.jpg" alt="Vesna Klacar o autizmu - Beogradska hronika"></a>
-								<a href="https://www.youtube.com/watch?v=CtAxLlQBChk" title = "Otvaranje Kulturno-Edukativnog Centra - Tara"><img src="http://img.youtube.com/vi/YE7VzlLtp-4/2.jpg" alt="Otvaranje Kulturno-Edukativnog Centra - Tara"></a> 
-								<a href="https://www.youtube.com/watch?v=20SrGEPT3lQ"><img src="http://img.youtube.com/vi/YE7VzlLtp-4/2.jpg" alt="Tribina o Autizmu"></a> 	
-								<a href="https://www.youtube.com/watch?v=Ko04u8QkgV0"><img src="http://img.youtube.com/vi/YE7VzlLtp-4/2.jpg" alt="Gostovanje u emisiji TEPIH Rtv Mag"></a> 	
-								<a href="https://www.youtube.com/watch?v=tkAm6ykdJBw"><img src="http://img.youtube.com/vi/YE7VzlLtp-4/2.jpg" alt="U subotu tribina o autizmu"></a> 	
-								<a href="https://www.youtube.com/watch?v=X4xO7cT0kOs"><img src="http://img.youtube.com/vi/YE7VzlLtp-4/2.jpg" alt="Tribina o autizmu Caffe TimeOut Obrenovac"></a> 	
-								<a href="https://www.youtube.com/watch?v=gHTOk7kYx_Q"><img src="http://img.youtube.com/vi/YE7VzlLtp-4/2.jpg" alt="Tribina: 'Interakcija sa publikom'"></a> 	
-								<a href="https://www.youtube.com/watch?v=gj8sKJaRDUM"><img src="http://img.youtube.com/vi/YE7VzlLtp-4/2.jpg" alt="Najava tribine Odgovor"></a> 	
-								<a href="https://www.youtube.com/watch?v=dnWuVDUUNJU"><img src="http://img.youtube.com/vi/YE7VzlLtp-4/2.jpg" alt="Odgovor na Autizam RTS"></a> 	
+							<div style="display:none;" class="html5gallery" data-skin="vertical" data-width="510" data-height="520" data-responsive="true">		
+								<a href="https://www.youtube.com/watch?v=_TvAykdKRu0&feature=youtu.be"><img src="http://img.youtube.com/vi/_TvAykdKRu0/hqdefault.jpg" alt="Humanitarni koncert MMI akademije, Cane i Beogradski sindikat u Ustanovi kulture Palilula"></a>
+								<a href="https://www.youtube.com/watch?v=UPXexo8_Dzo"><img src="http://img.youtube.com/vi/UPXexo8_Dzo/0.jpg" alt="Obeležen svetski dan osoba sa autizmom"></a>
+								<a href="https://www.youtube.com/watch?v=03jfZWP9SdI"><img src="http://img.youtube.com/vi/03jfZWP9SdI/0.jpg" alt="U naselju"></a>
+								<a href="https://www.youtube.com/watch?v=DOLQs0AE4Y0"><img src="http://img.youtube.com/vi/DOLQs0AE4Y0/0.jpg" alt="Vesna Klacar o autizmu - Beogradska hronika"></a>
+								<a href="https://www.youtube.com/watch?v=CtAxLlQBChk"><img src="http://img.youtube.com/vi/CtAxLlQBChk/1.jpg" alt="Otvaranje Kulturno-Edukativnog Centra - Tara"></a> 
+								<a href="https://www.youtube.com/watch?v=20SrGEPT3lQ"><img src="http://img.youtube.com/vi/20SrGEPT3lQ/2.jpg" alt="Tribina o Autizmu"></a> 	
+								<a href="https://www.youtube.com/watch?v=Ko04u8QkgV0"><img src="http://img.youtube.com/vi/Ko04u8QkgV0/2.jpg" alt="Gostovanje u emisiji TEPIH Rtv Mag"></a> 	
+								<a href="https://www.youtube.com/watch?v=tkAm6ykdJBw"><img src="http://img.youtube.com/vi/tkAm6ykdJBw/2.jpg" alt="U subotu tribina o autizmu"></a> 	
+								<a href="https://www.youtube.com/watch?v=X4xO7cT0kOs"><img src="http://img.youtube.com/vi/X4xO7cT0kOs/2.jpg" alt="Odgovor-Tribina o autizmu Caffe TimeOut Obrenovac"></a> 	
+								<a href="https://www.youtube.com/watch?v=gHTOk7kYx_Q"><img src="http://img.youtube.com/vi/gHTOk7kYx_Q/2.jpg" alt="Tribina: 'Interakcija sa publikom'"></a> 	
+								<a href="https://www.youtube.com/watch?v=gj8sKJaRDUM"><img src="http://img.youtube.com/vi/gj8sKJaRDUM/2.jpg" alt="Najava tribine Odgovor"></a> 	
+								<a href="https://www.youtube.com/watch?v=dnWuVDUUNJU"><img src="http://img.youtube.com/vi/dnWuVDUUNJU/2.jpg" alt="Odgovor na Autizam RTS" title="Odgovor na Autizam RTS"></a> 	
 									
 							</div>
 						</div>
@@ -62,25 +80,10 @@
 			</div> <!-- end col-4 -->	
 
 		</div> <!-- end row -->
-			<div class="social">
-						
-
-		</div>
-
-		<div class="row">
-			<footer class = "footer-content">
-				<p class="copyright">
-					"Copyright @ 2015 &nbsp;<a href="index.html">Kulturno  Edukativni Centar - TARA</a>
-				</p>
-
-				<p class="credit">		
-					Powered by Radomir Ranković
-				</p>
-			</footer>			
-		</div> <!-- end row -->
+	
+	<?php include('commponents/footer.php'); ?>
 
 	</div> <!-- end Container-->
-
 
 
 

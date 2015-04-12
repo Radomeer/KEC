@@ -77,21 +77,33 @@
 		
 
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name = "viewport" content="width=device-width, initial-scale=1.0">
+	<title>Kulturno-Edukativni Centar - TARA</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/mycustom.css">
+	<script type="text/javascript" src="js/respond.js"></script>
+	<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+  	<script src="gmaps/gmaps.js"></script>
+</head>
 
 
+<body>
+	
+	<div class="container">
 
-
-<?php include("commponents/header.php");?>
-
+ 		<?php include('commponents/header.php'); ?>
 
 		<?php include("commponents/navigation.php") ?> 
-
-
+		
 
 		<div class = "row">	
 			<article class "mainContent">
-				<div class="col col-md-8">
-					 <div class = "contact-form">
+				<div class="col col-md-9">
+					 <div class = "contact-form col col-md-6" >
 					 	<h1>Kontakt Forma</h1>
 					 	<form id = "contactForm" method="post" action="contact_form.php" novalidate> 
 							<?php 
@@ -107,49 +119,47 @@
 								}
 							?>
 			
-					 		<p>
-							Unesite Vaše Ime:
+					 	
+
+							<label for="name control-label">Unesite Vaše Ime:</label>
+					 		<div class = "controls">
 					 		<input type="text" name = "name" value="<?php echo (isset($name) ? $name : "") ?>" placeholder = "Ime">
-					 		</p>
-					 		Unesite Vašu E-mail Adresu:
-					 		<p><input type="email" name = "email" value="<?php echo (isset($email) ? $email : "") ?>" placeholder = "E-mail">
-					 		</p>
-					 		<p>
-					 			Unesite Poruku:
-					 			<textarea name = "message" placeholder="Poruka"><?php echo (isset($message) ? $message : "")?></textarea>
-					 		</p>
+					 		</div>
+					 		
+					 	
+					 		<label for="email control-label">Unesite Vašu E-mail Adresu:</label>
+					 		<div class = "controls">
+					 			<input type="email" name = "email" value="<?php echo (isset($email) ? $email : "") ?>" placeholder = "E-mail">
+					 			
+					 		</div>
+					 	
+					 			<label for="message control-label">Unesite Poruku:</label>
+					 			<div class = "controls">
+					 				<textarea name = "message" placeholder="Poruka"><?php echo (isset($message) ? $message : "")?></textarea>
+					 			</div>
+					 		
 							<input type="submit" name = "submitForm" value = "Pošalji">
 					 	</form>
-					  </div> <!-- end  div contact-form -->
-				</div> <!-- end col 8-->
+					  </div> <!-- end  div 6 col contact-form -->
+						<div class = "col col-md-6">
+							
+							<div class ="overlay">
+								<div id="map">
+								
+								</div>
+							</div>
+						</div>
+	
+				</div> <!-- end col 9-->
 			</article> <!-- end main Content -->
 			
-			<div class="col col-md-4">	
+			<div class="col col-md-3">	
 			<?php include("commponents/sidebar.php");?>
 			</div>	
-
 		</div> <!-- end row -->
 
-
-		<div class="social">
-						
-
-		</div>
-
-		<div class="row">
-			<footer class = "footer-content">
-			
-				<p class="copyright">
-					"Copyright @ 2015 &nbsp;<a href="index.html">Kulturno  Edukativni Centar - TARA</a>
-				</p>
-
-				<p class="credit">		
-					Powered by Radomir Ranković
-				</p>
-
-			</footer>			
-		</div> <!-- end row -->
-
+	<?php include("commponents/footer.php");?>
+	
 	</div> <!-- end Container-->
 
 
@@ -159,6 +169,43 @@
 	<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/myscript.js"></script>
+	<script type="text/javascript">
+	    var map;
+	    $(document).ready(function(){
+	      map = new GMaps({
+	        el: '#map',
+	        lat: 44.652875,
+	        lng: 20.193613
+	      });
+	      map.addMarker({
+	        lat: 44.652875,
+	        lng: 20.193613,
+	        title: 'Lima',
+	        details: {
+	          database_id: 42,
+	          author: 'Radomir'
+	        },
+	        click: function(e){
+	          if(console.log)
+	            console.log(e);
+	          alert('You clicked in this marker');
+	        },
+	        mouseover: function(e){
+	          if(console.log)
+	            console.log(e);
+	        }
+	      });
+	      map.addMarker({
+	        lat: 44.652875,
+	        lng: 20.193613,
+	        title: 'Informacije o centru',
+	        infoWindow: {
+	          content: '<p>Kulturno Edukativni Centar Tara Vojvode Mišića 100, 11500 Obrenovac</p>'
+	        }
+	      });
+	    });
+  </script>
+
 	<script type="text/javascript">
 
 		$(document).ready(function() {

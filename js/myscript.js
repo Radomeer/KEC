@@ -7,4 +7,6 @@ $(function() {
 		$('.dropdown-menu', this).fadeOut();
 	});//hover
 
+
+
 }); // Query is loaded
